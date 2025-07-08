@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto De Gouveia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .skill-icon {
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: grayscale(50%);
+        }
+        .skill-icon:hover {
+            transform: scale(1.15);
+            filter: grayscale(0%);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #52526c 0%, #af8d6b 50%, #52526c 100%);
+        }
+        .card-container {
+            perspective: 1000px;
+        }
+        .card {
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+
+    <div class="card-container w-full max-w-4xl p-4">
+        <div id="profile-card" class="card gradient-bg rounded-2xl shadow-2xl p-6 md:p-10 text-white overflow-hidden relative">
+            
+            <!-- Background decorative elements -->
+            <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="p" width="100" height="100" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M50 0V100M0 50H100" stroke="white" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(#p)"/></svg>
+            </div>
+
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-6 md:gap-10">
+                <!-- Avatar -->
+                <div class="flex-shrink-0">
+                    <img src="RobertoDeGouveia.png" alt="Avatar de Roberto De Gouveia"
+                        class="w-56 h-56 md:w-72 md:h-72 p-1 rounded-full border-4 object-contain shadow-lg"
+                        style="border-color: #e8bf96;">
+                </div>
+
+                <!-- Info Section -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">Roberto De Gouveia</h1>
+                    <p class="mt-2 text-xl md:text-2xl font-medium rounded-md px-3 py-1 inline-block"
+                    style="color: #bfc2d4; background-color: hsla(258, 33%, 44%, 0.5);">
+                    Developer, Data & AI Specialist
+                    </p>
+                    
+                    <!-- Skills Section -->
+                    <div class="mt-6">
+                        <p class="text-300 mb-4" style="color: #3a3b6b;">Tecnologías Principales:</p>
+                        <div class="flex justify-center md:justify-start flex-wrap gap-4">
+                            <!-- Python -->
+                            <div class="group relative">
+                                <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="Python" class="h-10 w-10 skill-icon">
+                                <span class="absolute -top-10 left-1/2 -translate-x-1/2 z-10 w-auto p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Python</span>
+                            </div>
+                            <!-- SQL -->
+                            <div class="group relative">
+                                <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="SQL" class="h-10 w-10 skill-icon">
+                                <span class="absolute -top-10 left-1/2 -translate-x-1/2 z-10 w-auto p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">SQL</span>
+                            </div>
+                            <!-- Power BI -->
+                            <div class="group relative">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" class="h-10 w-10 skill-icon">
+                                <span class="absolute -top-10 left-1/2 -translate-x-1/2 z-10 w-auto p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Power BI</span>
+                            </div>
+                            <!-- Tableau -->
+                            <div class="group relative">
+                                <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" alt="Tableau" class="h-10 w-10 skill-icon">
+                                <span class="absolute -top-10 left-1/2 -translate-x-1/2 z-10 w-auto p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Tableau</span>
+                            </div>
+                             <!-- Docker -->
+                            <div class="group relative">
+                                <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker" class="h-10 w-10 skill-icon">
+                                <span class="absolute -top-10 left-1/2 -translate-x-1/2 z-10 w-auto p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Docker</span>
+                            </div>
+                            <!-- Git -->
+                            <div class="group relative">
+                                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" class="h-10 w-10 skill-icon">
+                                <span class="absolute -top-10 left-1/2 -translate-x-1/2 z-10 w-auto p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Git</span>
+                            </div>
+                            <div class="group relative">
+                                <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" class="h-10 w-10 skill-icon">
+                                <span class="absolute -top-10 left-1/2 -translate-x-1/2 z-10 w-auto p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Script para efecto 3D al mover el ratón
+        const card = document.getElementById('profile-card');
+        const cardContainer = document.querySelector('.card-container');
+
+        cardContainer.addEventListener('mousemove', (e) => {
+            const { clientX, clientY } = e;
+            const { left, top, width, height } = cardContainer.getBoundingClientRect();
+            
+            const x = clientX - left;
+            const y = clientY - top;
+
+            const rotateX = 20 * (y - height / 2) / (height / 2);
+            const rotateY = -20 * (x - width / 2) / (width / 2);
+
+            card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+        });
+
+        cardContainer.addEventListener('mouseleave', () => {
+            card.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+        });
+    </script>
+</body>
+</html>
