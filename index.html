@@ -19,7 +19,7 @@
             filter: grayscale(0%);
         }
         .gradient-bg {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1c1917 50%, #1e3a8a 100%);
+            background: linear-gradient(135deg, #52526c 0%, #af8d6b 50%, #52526c 100%);
         }
         .card-container {
             perspective: 1000px;
@@ -43,18 +43,22 @@
             <div class="relative z-10 flex flex-col md:flex-row items-center gap-6 md:gap-10">
                 <!-- Avatar -->
                 <div class="flex-shrink-0">
-                    <img src="RobertoDeGouveia.png" alt="Avatar de Roberto De Gouveia" 
-                        class="w-56 h-56 md:w-72 md:h-72 p-1 rounded-full border-4 border-blue-400 object-contain shadow-lg">
+                    <img src="RobertoDeGouveia.png" alt="Avatar de Roberto De Gouveia"
+                        class="w-56 h-56 md:w-72 md:h-72 p-1 rounded-full border-4 object-contain shadow-lg"
+                        style="border-color: #e8bf96;">
                 </div>
 
                 <!-- Info Section -->
                 <div class="text-center md:text-left">
                     <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">Roberto De Gouveia</h1>
-                    <p class="mt-2 text-xl md:text-2xl font-medium text-blue-300 bg-blue-900/50 rounded-md px-3 py-1 inline-block">Developer, Data & AI Specialist</p>
+                    <p class="mt-2 text-xl md:text-2xl font-medium rounded-md px-3 py-1 inline-block"
+                    style="color: #bfc2d4; background-color: hsla(258, 33%, 44%, 0.5);">
+                    Developer, Data & AI Specialist
+                    </p>
                     
                     <!-- Skills Section -->
                     <div class="mt-6">
-                        <p class="text-gray-300 mb-4">Tecnologías Principales:</p>
+                        <p class="text-300 mb-4" style="color: #3a3b6b;">Tecnologías Principales:</p>
                         <div class="flex justify-center md:justify-start flex-wrap gap-4">
                             <!-- Python -->
                             <div class="group relative">
@@ -97,6 +101,7 @@
         </div>
     </div>
 
+    <!--
     <script>
         // Script para efecto 3D al mover el ratón
         const card = document.getElementById('profile-card');
@@ -119,5 +124,6 @@
             card.style.transform = 'rotateX(0) rotateY(0) scale(1)';
         });
     </script>
+    -->
 </body>
 </html>
